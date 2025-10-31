@@ -17,7 +17,7 @@ env:
 
 jobs:
   build-and-push-image:
-    name: Build and push (custom)
+    name: Build and push with custom edits
     # automate just for closed PRs that get merged (also requires on pull_request settings above)
     if: ${{ (github.event.pull_request.merged == true) || (github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
