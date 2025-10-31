@@ -30,10 +30,10 @@ jobs:
       id-token: write
 
     steps:
-    # this requires extra command, has to be defined through shell step
-    # not used, just to show syntax
-    - name: Get base repo name into variable (without user)
-      run: echo "BASE_REPO_NAME=$(basename ${{ github.repository }})" >> "$GITHUB_ENV"
+      # this requires extra command, has to be defined through shell step
+      # not used, just to show syntax
+      - name: Get base repo name into variable (without user)
+        run: echo "BASE_REPO_NAME=$(basename ${{ github.repository }})" >> "$GITHUB_ENV"
 
       - name: Checkout repository
         uses: actions/checkout@v5
