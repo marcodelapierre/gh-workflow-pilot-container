@@ -5,8 +5,7 @@ name: BUILD_PUSH
 on:
   # automate for every tag push starting with "v"
   push:
-    tags: 
-    - 'v*'
+    tags: [ "v*" ]
   # enable manual trigger
   workflow_dispatch:
 
