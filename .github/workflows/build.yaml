@@ -12,8 +12,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: cowpy_gh
-  #IMAGE_NAME: ${{ github.repository }}
+  # name must match existing repo
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push-image:
